@@ -1,0 +1,35 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  width: 400px;
+  padding: 20px;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 16px;
+}
+
+.btn-entrar {
+  background-color: #4caf50; /* Verde */
+  color: white; /* Cor do texto */
+
+  &:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+  }
+}

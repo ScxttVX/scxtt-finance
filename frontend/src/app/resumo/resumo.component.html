@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Resumo Financeiro</h1>
+<div mat-dialog-content>
+  <mat-card class="resumo-card">
+    <mat-card-content>
+      <div class="resumo-header">
+        <h2>Resumo Financeiro</h2>
+      </div>
+      <div class="resumo-body">
+        <div class="resumo-item">
+          <span class="label">Entradas:</span>
+          <span class="valor entradas">{{ entradas | currency: 'BRL' }}</span>
+        </div>
+        <div class="resumo-item">
+          <span class="label">Saídas:</span>
+          <span class="valor saidas">{{ saidas | currency: 'BRL' }}</span>
+        </div>
+        <div class="resumo-item saldo">
+          <span class="label">Saldo:</span>
+          <span class="valor">{{ saldo | currency: 'BRL' }}</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Exibir mensagens de carregamento ou erro -->
+  <mat-card *ngIf="carregando" class="status-card">
+    <mat-card-content>
+      <p class="status-mensagem">Carregando resumo...</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card *ngIf="erro" class="status-card">
+    <mat-card-content>
+      <p class="status-mensagem erro-mensagem">{{ erro }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button color="primary" (click)="fechar()">Fechar</button>
+</div>
