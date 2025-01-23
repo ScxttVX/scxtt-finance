@@ -6,6 +6,6 @@ plan = [
 
 [run]
 processes = [
-  { name = "backend", command = "cd backend && npm start", port = 5000 },
-  { name = "frontend", command = "cd frontend && npm start", port = 3000 }
+  { name = "backend", command = "cd backend && npm install && npm start", port = 5000 },
+  { name = "frontend", command = "cd frontend && npm install && npm start", port = 3000 }
 ]
