@@ -1,0 +1,11 @@
+[build]
+plan = [
+  { source = "./backend", name = "backend" },
+  { source = "./frontend", name = "frontend" }
+]
+
+[run]
+processes = [
+  { name = "backend", command = "cd backend && npm start" },
+  { name = "frontend", command = "cd frontend && npm run start" }
+]
