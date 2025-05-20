@@ -47,7 +47,7 @@ http://localhost:5173
 - Cálculo automático do custo por centímetro quadrado
 
 ## 🛒 Aba "Adicionar Produto"
--Adição de produtos com nome e valor em cm²
+- Adição de produtos com nome e valor em cm²
 - Cálculo automático do valor total com base no custo por cm²
 
 # 📊 Aba "Relatório Financeiro"
