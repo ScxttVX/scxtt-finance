@@ -15,9 +15,6 @@
 
 ---
 
-
----
-
 ## ⚙️ Como rodar localmente
 
 ### Pré-requisitos
